@@ -1,0 +1,9 @@
+/* pages/contract/contract.wxss */
+.contract-search-toolbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.contract-lists-area {
+  margin-top: 100rpx;
+}

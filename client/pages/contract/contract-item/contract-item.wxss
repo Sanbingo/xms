@@ -1,0 +1,30 @@
+/* pages/contract/contract-tiem/contract-item.wxss */
+
+.contract-item {
+  display: flex;
+  direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 34rpx;
+  height: 100rpx;
+  line-height: 100rpx;
+  border-bottom: 1px solid #e2e2e2;
+  padding: 0 30rpx;
+}
+
+.contract-item-desc-img {
+  width: 36rpx;
+  height: 36rpx;
+  vertical-align:middle;
+}
+
+.contract-item-desc-name {
+  margin-left: 5px;
+  vertical-align: middle;
+}
+
+.contract-item-desc-phone {
+  width: 36rpx;
+  height: 36rpx;
+  vertical-align: middle
+}

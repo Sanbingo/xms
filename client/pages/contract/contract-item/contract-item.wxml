@@ -1,0 +1,11 @@
+<!--pages/contract/contract-tiem/contract-item.wxml-->
+<view class="contract-item">
+  <view>
+    <image class="contract-item-desc-img" src="/images/avatar.png"></image>
+    <text class="contract-item-desc-name">{{item.name}}</text>
+  </view>
+  <view>
+    <image catchtap="phoneTap" class="contract-item-desc-phone" src="/images/telephone.png" data-phone="{{item.telephone}}"></image>
+  </view>
+
+</view>

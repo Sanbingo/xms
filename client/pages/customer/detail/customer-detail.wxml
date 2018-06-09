@@ -1,0 +1,23 @@
+<!--pages/customer/detail/customer-detail.wxml-->
+<import src="../card/card-template.wxml" />
+
+<view class="customer-detail-container">
+  <view class="customer-detail-name">
+    <text>{{name}}</text>
+  </view>
+  <view class="customer-detail-contact">
+    <text>电话：{{telephone}}\n</text>
+    <text>身份证：{{idNumber}}\n</text>
+    <text>生日：{{birthday}}\n</text>
+    <text>地址：{{address}}\n</text>
+    <text>备注：{{remark}}\n</text>
+  </view>
+  <block wx:for="{{financeInfo}}" wx:key="{{index}}">
+    <view bindtap="onCardTap" data-id="{{item.id}}">
+      <template is="card-template" data="{{...item}}" />
+    </view>
+  </block>
+  <view class="weui-btn-area">
+    <button class="weui-btn" type="normal" data-id="{{customerId}}" bindtap="onAddNewTap">新建理财</button>
+  </view>
+</view>

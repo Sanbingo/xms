@@ -1,0 +1,8 @@
+/* pages/contract/search-result-component/search-result-component.wxss */
+.search-result-container {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  z-index: 9999;
+  background: #f7f7f7; 
+}

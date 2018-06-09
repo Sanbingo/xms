@@ -1,0 +1,2 @@
+/* pages/index/finance/finance-component.wxss */
+@import "/style/weui.wxss";

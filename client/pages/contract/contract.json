@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "contract-item": "/pages/contract/contract-item/contract-item",
+    "search-component": "/pages/contract/search-component/search-component"
+  }
+}

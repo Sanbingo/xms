@@ -1,0 +1,27 @@
+<!-- <import src="/comm/personal/personal-template" />
+<import src="/comm/financial/financial-template" /> -->
+
+<view class="page" xmlns:wx="http://www.w3.org/1999/xhtml">
+  <view class="page__hd">
+    <view class="page__title">新建</view>
+    <view class="page__desc">客户信息&理财信息</view>
+  </view>
+  <view class="page__bd">
+    <form bindsubmit="formSubmit">
+      <personal-component bindmyevent="onPersonalEvent" data="{{personalInfo}}"></personal-component>
+      <block wx:for="{{financeProducts}}" wx:key="{{index}}">
+        <view class="xms_finance_item_style">
+          <view class="weui-cells__title">
+            理财信息{{index+1}}
+            <icon catchtap="deleteCurFinanceItem" data-index="{{index}}" class="xms_delete_icon_style" type="cancel" size="23"></icon>
+          </view>
+          <finance-component bindmyevent="onFinanceEvent" data-index="{{index}}" data="{{item}}"></finance-component>
+        </view>
+      </block>
+      <view class="weui-btn-area">
+        <button class="weui-btn" type="normal" bindtap="addFinance">新建理财</button>
+        <button class="weui-btn" type="primary" formType="submit">保存</button>
+      </view>
+    </form>
+  </view>
+</view>

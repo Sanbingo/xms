@@ -1,0 +1,13 @@
+<!--pages/owner/owner.wxml-->
+<view>
+  <view class="text-radio-container">
+    <view class="text-radio-group">
+      <block wx:for="{{tabs}}" wx:key="*this">
+        <text id="{{index}}" class="text-radio-item {{activeIndex == index ? 'text-radio__item_on' : ''}}" bindtap="tabClick">{{item}}</text>
+      </block>
+    </view>
+  </view>
+  <view class="container">
+    <ec-canvas id="mychart-dom-bar" canvas-id="mychart-bar" ec="{{ ec }}"></ec-canvas>
+  </view>
+</view>

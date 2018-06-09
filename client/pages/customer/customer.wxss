@@ -1,0 +1,11 @@
+/* pages/customer/customer.wxss */
+
+text {
+  font-family: MicroSoft Yahei
+}
+
+.no-tip-list {
+  margin-top: 50rpx;
+  text-align: center;
+  color:darkgrey;
+}

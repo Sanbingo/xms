@@ -1,0 +1,20 @@
+<!--pages/customer/tab-item/tab-item-component.wxml-->
+<view class="tab-item-component-container">
+  <view class="tab-item-component-left">
+    <text class="tab-item-component-name">{{item.name}}</text>
+    <view>
+      <image class="tab-item-icon" wx:if="{{item.isBirthDay}}" src="/images/icon/cake.png"></image>
+      <block wx:for="{{item.financeTypeName}}" wx:key="{{key}}">
+        <image class="tab-item-icon" wx:if="{{item === '存款'}}" src="/images/icon/deposit.png"></image>
+        <image class="tab-item-icon" wx:if="{{item === '理财'}}" src="/images/icon/finance.png"></image>
+        <image class="tab-item-icon" wx:if="{{item === '基金'}}" src="/images/icon/fund.png"></image>
+        <image class="tab-item-icon" wx:if="{{item === '保险'}}" src="/images/icon/insurance.png"></image>
+        <image class="tab-item-icon" wx:if="{{item === '其它'}}" src="/images/icon/other.png"></image>
+      </block>
+    </view>
+  </view>
+  <view class="tab-item-component-right">
+    <image catchtap='makeFlag' data-cid="{{item.cid}}" data-datetime="{{item.datetime}}" class="tab-item-component-img" src="{{ item.ifDone ? '/images/done-ok.png': '/images/done.png'}}"></image>
+    <image catchtap='callPhone' data-telephone="{{item.telephone}}" class="tab-item-component-img" src="/images/telephone.png"></image>
+  </view>
+</view>

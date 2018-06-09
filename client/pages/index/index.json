@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "personal-component": "/pages/index/personal/personal-component",
+    "finance-component": "/pages/index/finance/finance-component"
+  }
+}

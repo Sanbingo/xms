@@ -1,0 +1,12 @@
+<view>
+  <view class="contract-search-toolbar">
+    <search-component bindsearchEvent="onSearchEvent"></search-component>
+  </view>
+  <view class="contract-lists-area">
+    <block wx:for="{{customerList}}" wx:key="{{index}}">
+      <view bindtap="contractTap" data-cid="{{item.cid}}">
+        <contract-item item="{{item}}" data-index="{{index}}"></contract-item>
+      </view>
+    </block>
+  </view>
+</view>

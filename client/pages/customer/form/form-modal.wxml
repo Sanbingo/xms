@@ -1,0 +1,11 @@
+<!--pages/customer/form/form-modal.wxml-->
+
+<view>
+  <finance-component bindmyevent="onFinanceEvent" data="{{financeInfo}}"></finance-component>
+  <view class="weui-btn-area" wx:if="{{mode !== 'add'}}">
+    <button class="weui-btn" type="primary" bindtap="saveTap">保存</button>
+  </view>
+  <view wx:else>
+    <button class="weui-btn" type="primary" catchtap="confirmTap">确定</button>
+  </view>
+</view>

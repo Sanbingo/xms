@@ -1,0 +1,53 @@
+<view class="weui-cells__title">
+  个人信息</view>
+<view class="weui-cells weui-cells_after-title">
+  <view class="weui-cell weui-cell_input">
+    <view class="weui-cell__hd">
+      <view class="weui-label">姓名</view>
+    </view>
+    <view class="weui-cell__bd">
+      <input value="{{item.name}}" class="weui-input" bindinput="bindInputNameChange" placeholder="请输入姓名" />
+    </view>
+  </view>
+  <view class="weui-cell weui-cell_input">
+    <view class="weui-cell__hd">
+      <view class="weui-label">手机</view>
+    </view>
+    <view class="weui-cell__bd">
+      <input value="{{item.telephone}}" class="weui-input" bindinput="bindInputTelephoneChange" placeholder="请输入手机号" />
+    </view>
+  </view>
+  <view class="weui-cell weui-cell_input">
+    <view class="weui-cell__hd">
+      <view class="weui-label">住址</view>
+    </view>
+    <view class="weui-cell__bd">
+      <input value="{{item.address}}" class="weui-input" bindinput="bindInputAddressChange" placeholder="请输入住址" />
+    </view>
+  </view>
+  <view class="weui-cell weui-cell_input">
+    <view class="weui-cell__hd">
+      <view class="weui-label">身份证</view>
+    </view>
+    <view class="weui-cell__bd">
+      <input value="{{item.idNumber}}" class="weui-input" bindinput="bindInputIdNumberChange" placeholder="请输入身份证" />
+    </view>
+  </view>
+  <view class="weui-cell weui-cell_input">
+    <view class="weui-cell__hd">
+      <view class="weui-label">生日</view>
+    </view>
+    <view class="weui-cell__bd">
+      <picker mode="date" value="{{item.birthday}}" bindchange="bindBirthdayChange">
+        <view class="weui-input">{{item.birthday}}</view>
+      </picker>
+    </view>
+  </view>
+  <view class="weui-cell">
+    <view class="weui-cell__bd">
+      <textarea class="weui-textarea" bindinput="bindInputRemarkChange"
+      placeholder="备注" value="{{item.remark}}" style="height: 3.3em" />
+      <view class="weui-textarea-counter">{{item.remark ? item.remark.length : 0}}/200</view>
+    </view>
+  </view>
+</view>

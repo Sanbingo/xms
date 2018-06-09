@@ -1,0 +1,54 @@
+<view class="weui-cells weui-cells_after-title">
+  <view class="weui-cell weui-cell_input">
+    <view class="weui-cell__hd">
+      <view class="weui-label">类型</view>
+    </view>
+    <view class="weui-cell__bd">
+      <picker mode="selector" range="{{range}}" value="{{defaultSel}}" bindchange="bindTypeChange">
+        <view class="weui-input">{{item.type}}</view>
+      </picker>
+    </view>
+  </view>
+  <view class="weui-cell weui-cell_input">
+    <view class="weui-cell__hd">
+      <view class="weui-label">金额</view>
+    </view>
+    <view class="weui-cell__bd">
+      <input class="weui-input" bindinput="bindInputMoneyChange" placeholder="请输入金额" value="{{item.money}}" />
+    </view>
+  </view>
+  <view class="weui-cell weui-cell_input">
+    <view class="weui-cell__hd">
+      <view class="weui-label">卡号</view>
+    </view>
+    <view class="weui-cell__bd">
+      <input class="weui-input" placeholder="请输入卡号" bindinput="bindInputCardNoChange" value="{{item.cardNo}}" />
+    </view>
+  </view>
+  <view class="weui-cell weui-cell_input">
+    <view class="weui-cell__hd">
+      <view class="weui-label">购买日期</view>
+    </view>
+    <view class="weui-cell__bd">
+      <picker mode="date" value="{{item.startdate}}" bindchange="bindStartDateChange">
+        <view class="weui-input">{{item.startdate}}</view>
+      </picker>
+    </view>
+  </view>
+  <view class="weui-cell weui-cell_input">
+    <view class="weui-cell__hd">
+      <view class="weui-label">到期日期</view>
+    </view>
+    <view class="weui-cell__bd">
+      <picker mode="date" value="{{item.enddate}}" bindchange="bindEndDateChange">
+        <view class="weui-input">{{item.enddate}}</view>
+      </picker>
+    </view>
+  </view>
+  <view class="weui-cell">
+    <view class="weui-cell__bd">
+      <textarea class="weui-textarea" bindinput="bindInputRemarkChange" placeholder="理财备注" style="height: 3.3em " value="{{item.remark}}" />
+      <view class="weui-textarea-counter ">{{item.remark ? item.remark.length : 0}}/200</view>
+    </view>
+  </view>
+</view>

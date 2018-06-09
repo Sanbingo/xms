@@ -1,0 +1,2 @@
+/* pages/index/personal/personal-component.wxss */
+@import "/style/weui.wxss";

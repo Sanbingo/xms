@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "finance-component": "/pages/index/finance/finance-component"
+  }
+}

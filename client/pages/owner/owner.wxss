@@ -1,0 +1,46 @@
+/* pages/owner/owner.wxss */
+
+.text-radio-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.text-radio-group {
+  border: 2px solid #e2e2e2;
+  border-radius: 8px;
+}
+
+.text-radio-item {
+  padding: 4px 30rpx;
+  border-right: 2px solid #e2e2e2;
+}
+
+.text-radio__item_on {
+  background-color: #e2e2e2;
+}
+
+.text-radio-item:last-child {
+  border-right: 0;
+}
+
+.container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 100rpx 0;
+  margin-top: 120rpx;
+}
+
+ec-canvas {
+  width: 100%;
+  height: 100%;
+}

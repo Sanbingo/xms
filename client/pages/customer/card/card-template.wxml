@@ -1,0 +1,22 @@
+<template name="card-template">
+  <view class='card-detail-content'>
+    <view>
+      <text>类型：{{type}}</text>
+    </view>
+    <view>
+      <text>卡号：{{cardNo}}</text>
+    </view>
+    <view>
+      <text>金额：{{money}}</text>
+    </view>
+    <view>
+      <text>购买日期：{{startdate}}</text>
+    </view>
+    <view>
+      <text>到期日期：{{enddate}}</text>
+    </view>
+    <view>
+      <text>备注：{{remark}}</text>
+    </view>
+  </view>
+</template>

@@ -1,0 +1,8 @@
+/* pages/contract/search-component/search-component.wxss */
+@import '/style/weui.wxss';
+.weui-search-bar__new_add {
+  width: 60rpx;
+  height: 60rpx;
+  vertical-align: middle;
+  margin-right: 5px;
+}

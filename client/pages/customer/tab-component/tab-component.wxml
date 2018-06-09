@@ -1,0 +1,8 @@
+<!--pages/customer/tab/tab-component.wxml-->
+<view>
+  <block wx:for="{{tab}}" wx:key="{{index}}">
+    <view bindtap='onTabItemTap' data-cid="{{item.cid}}">
+      <tab-item-component item="{{item}}"></tab-item-component>
+    </view>
+  </block>
+</view>

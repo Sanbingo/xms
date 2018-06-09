@@ -1,0 +1,7 @@
+.card-detail-content {
+  padding: 10px;
+  border: 1px solid #cdcdcd;
+  border-radius: 5px;
+  font-size: 30rpx;
+  margin-bottom: 10px;
+}

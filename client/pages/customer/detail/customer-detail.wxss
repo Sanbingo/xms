@@ -1,0 +1,19 @@
+/* pages/customer/detail/customer-detail.wxss */
+@import '../card/card-template.wxss';
+
+.customer-detail-container {
+  margin: 10px;
+}
+
+.customer-detail-name {
+  font-size: 42rpx;
+  margin-bottom: 10px;
+  font-weight: 600;
+  padding-left: 10px;
+}
+
+.customer-detail-contact {
+  padding-left: 10px;
+  margin-bottom: 10px;
+  font-size: 30rpx;
+}

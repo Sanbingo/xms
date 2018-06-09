@@ -1,0 +1,4 @@
+<!--pages/contract/search-result-component/search-result-component.wxml-->
+<view class="search-result-container">
+  高度100%，占用整个屏
+</view> 
